@@ -9,7 +9,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search comic fragment"
-        android:layout_gravity="center"/>
+        android:text="Start typing to find a particular comics."
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/baseline_menu_book_24"/>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/my_gray"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search for a comic">
+
+        <requestFocus />
+    </SearchView>
+
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search" />
 
 </FrameLayout>
